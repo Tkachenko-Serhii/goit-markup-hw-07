@@ -142,6 +142,10 @@ img {
   transition: fill 250ms var(--animation-timing-function);
 }
 
+.social-list__icon--dark {
+  fill: var(--main-color);
+}
+
 .social-list__link:focus .social-list__icon,
 .social-list__link:hover .social-list__icon {
   fill: var(--main-color);
@@ -156,6 +160,10 @@ img {
   border-radius: 50%;
   background-color: transparent;
   transition: background-color 250ms var(--animation-timing-function);
+}
+
+.social-list__link--dark {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-list__link:hover, .social-list__link:focus {
@@ -527,8 +535,8 @@ img {
   color: var(--main-color);
 }
 
-.work-categories-link:hover .overlay,
-.work-categories-link:focus .overlay {
+.work-categories__list__link:hover .overlay,
+.work-categories__list__link:focus .overlay {
   transform: translateY(0);
 }
 
@@ -543,47 +551,22 @@ img {
   padding-bottom: 60px;
 }
 
-.footer-logo {
-  margin-bottom: 20px;
-  display: block;
-  padding: 0;
-  margin-right: 0;
-}
-
-.contact-info-location {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-}
-
-.contact-info-connection {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--contact-info-conection-color);
-}
-
-.contact-info-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-elements {
+.footer__elements {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.address-container {
+.footer__elements__address {
   margin-right: 70px;
 }
 
-.social-container {
+.footer__elements__social {
   min-width: 206px;
   margin-right: 93px;
 }
 
-.social-title {
+.footer__elements__social__title {
   display: block;
   font-size: 14px;
   line-height: 1.14;
@@ -593,12 +576,29 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-link {
-  background-color: rgba(255, 255, 255, 0.1);
+.footer__logo {
+  margin-bottom: 20px;
+  display: block;
+  padding: 0;
+  margin-right: 0;
 }
 
-.footer-icon {
-  fill: var(--main-color);
+.contact-info {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contact-info__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contact-info__location {
+  color: var(--main-color);
+}
+
+.contact-info__connection {
+  color: var(--contact-info-conection-color);
 }
 
 .hero {
@@ -816,7 +816,32 @@ img {
   padding-bottom: var(--section-pb);
 }
 
-.work-categories-title {
+.work-categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.work-categories__list__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: var(--main-color);
+  flex-basis: calc(100% / 3 - 30px);
+  transition: box-shadow 250ms var(--animation-timing-function);
+}
+
+.work-categories__list__item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.work-categories__list__description {
+  padding: 20px 24px;
+  border: var(--work-categories-color) solid 1px;
+  border-top: none;
+}
+
+.work-categories__list__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -825,40 +850,15 @@ img {
   margin-bottom: 4px;
 }
 
-.description-box {
-  position: relative;
-  overflow: hidden;
-}
-
-.work-categories-product {
+.work-categories__list__product {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--link-color);
 }
 
-.work-categories-description {
-  padding: 20px 24px;
-  border: var(--work-categories-color) solid 1px;
-  border-top: none;
-}
-
-.work-categories-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.work-categories-item {
-  margin-left: 30px;
-  margin-top: 30px;
-  background-color: var(--main-color);
-  flex-basis: calc(100% / 3 - 30px);
-  transition: box-shadow 250ms var(--animation-timing-function);
-}
-
-.work-categories-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.description-box {
+  position: relative;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */

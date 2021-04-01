@@ -6,6 +6,10 @@
     fill: var(--border-color);
     transition: fill 250ms var(--animation-timing-function);
 
+    &--dark {
+      fill: var(--main-color);
+    }
+
     .social-list__link:focus &,
     .social-list__link:hover & {
       fill: var(--main-color);
@@ -21,6 +25,10 @@
     border-radius: 50%;
     background-color: transparent;
     transition: background-color 250ms var(--animation-timing-function);
+
+    &--dark {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
 
     &:hover,
     &:focus {
