@@ -611,7 +611,13 @@ img {
   background-size: cover;
 }
 
-.hero-title {
+.hero__position {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -622,12 +628,6 @@ img {
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
-}
-
-.hero-position {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
 }
 
 .advantage {
