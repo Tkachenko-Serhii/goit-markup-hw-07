@@ -12,9 +12,9 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--main-color);
-}
 
-.work-categories-link:hover .overlay,
-.work-categories-link:focus .overlay {
-  transform: translateY(0);
+  .work-categories-link:hover &,
+  .work-categories-link:focus & {
+    transform: translateY(0);
+  }
 }
