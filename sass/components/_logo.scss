@@ -1,0 +1,19 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: 90px;
+}
+
+.logo-text-white-theme {
+  color: var(--second-color);
+}
+
+.logo-text-dark-theme {
+  color: var(--main-color);
+}
