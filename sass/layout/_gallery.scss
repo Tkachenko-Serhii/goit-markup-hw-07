@@ -4,7 +4,7 @@
   padding-bottom: 94px;
 
   &__list {
-    display: flex;
+    @include flex();
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;

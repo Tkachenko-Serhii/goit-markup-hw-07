@@ -16,7 +16,7 @@
   }
 
   &__form {
-    display: flex;
+    @include flex();
     flex-direction: column;
   }
 

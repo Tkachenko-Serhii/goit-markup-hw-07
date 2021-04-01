@@ -1,5 +1,5 @@
 .social-list {
-  display: flex;
+  @include flex();
   justify-content: space-between;
 
   &__icon {
@@ -17,7 +17,7 @@
   }
 
   &__link {
-    display: flex;
+    @include flex();
     justify-content: center;
     align-items: center;
     width: 44px;

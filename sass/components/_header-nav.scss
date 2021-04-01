@@ -1,5 +1,5 @@
 .navigation {
-  display: flex;
+  @include flex();
   align-items: center;
 
   & .active-link {
@@ -9,7 +9,7 @@
     margin-right: 50px;
   }
   &__list {
-    display: flex;
+    @include flex();
     align-items: center;
   }
   &__link {

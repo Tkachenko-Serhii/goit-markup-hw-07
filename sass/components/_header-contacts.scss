@@ -1,5 +1,5 @@
 .contacts {
-  display: flex;
+  @include flex();
   margin-left: auto;
 
   &__item--mail {
@@ -7,7 +7,7 @@
   }
 
   &__link {
-    display: flex;
+    @include flex();
     align-items: center;
     font-weight: 500;
     font-size: 14px;
