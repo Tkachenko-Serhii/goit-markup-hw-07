@@ -4,6 +4,7 @@
 @import './base/common';
 @import './base/container';
 
+@import './components/active-link';
 @import './components/backdrop';
 @import './components/modal-btn';
 @import './components/title';
@@ -14,7 +15,6 @@
 @import './components/header-contacts';
 @import './components/modal-window-footer';
 @import './components/modal-btn-footer';
-@import './components/modal-window';
 @import './components/modal-form';
 @import './components/modal-btn-close';
 @import './components/filter-buttons';

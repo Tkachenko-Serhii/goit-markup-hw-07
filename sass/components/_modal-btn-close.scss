@@ -1,4 +1,4 @@
-.modal-btn-close {
+.modal__btn--close {
   display: inline-flex;
   position: absolute;
   right: 8px;
@@ -13,9 +13,9 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--main-color);
   transition: fill 250ms var(--animation-timing-function);
-}
 
-.modal-btn-close:hover,
-.modal-btn-close:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }

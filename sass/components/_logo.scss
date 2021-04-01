@@ -8,12 +8,11 @@
   padding-top: 25px;
   padding-bottom: 25px;
   margin-right: 90px;
-}
 
-.logo-text-white-theme {
-  color: var(--second-color);
-}
-
-.logo-text-dark-theme {
-  color: var(--main-color);
+  &--white-theme {
+    color: var(--second-color);
+  }
+  &--dark-theme {
+    color: var(--main-color);
+  }
 }
