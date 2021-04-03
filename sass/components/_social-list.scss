@@ -1,19 +1,7 @@
-.social-list {
-  @include flex();
-  justify-content: space-between;
-
-  &__icon {
-    fill: var(--border-color);
-    transition: fill 250ms var(--animation-timing-function);
-
-    &--dark {
-      fill: var(--main-color);
-    }
-
-    .social-list__link:focus &,
-    .social-list__link:hover & {
-      fill: var(--main-color);
-    }
+.social {
+  &__list {
+    @include flex();
+    justify-content: space-between;
   }
 
   &__link {
@@ -26,13 +14,27 @@
     background-color: transparent;
     transition: background-color 250ms var(--animation-timing-function);
 
-    &--dark {
+    &-dark {
       background-color: rgba(255, 255, 255, 0.1);
     }
 
     &:hover,
     &:focus {
       background-color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    fill: var(--border-color);
+    transition: fill 250ms var(--animation-timing-function);
+
+    &-dark {
+      fill: var(--main-color);
+    }
+
+    .social__link:focus &,
+    .social__link:hover & {
+      fill: var(--main-color);
     }
   }
 }

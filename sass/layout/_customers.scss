@@ -1,4 +1,4 @@
-.regular-customers {
+.customers {
   background-color: var(--main-color);
 
   &__list {
@@ -31,11 +31,11 @@
     }
   }
 
-  &__img {
+  &__icon {
     fill: var(--border-color);
     transition: fill 250ms var(--animation-timing-function);
-    .regular-customers__link:hover &,
-    .regular-customers__link:focus & {
+    .customers__link:hover &,
+    .customers__link:focus & {
       fill: var(--accent-color);
     }
   }

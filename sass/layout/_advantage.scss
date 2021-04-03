@@ -14,24 +14,25 @@
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100% / 4 - 30px);
-
-    &__title {
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: var(--title-color);
-      margin-bottom: 10px;
-    }
-
-    &__text {
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      color: var(--link-color);
-    }
   }
+
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--link-color);
+  }
+
   &__img {
     @include flex();
     align-items: center;

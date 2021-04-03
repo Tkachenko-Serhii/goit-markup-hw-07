@@ -13,8 +13,8 @@
   letter-spacing: 0.03em;
   color: var(--main-color);
 
-  .work-categories__list__link:hover &,
-  .work-categories__list__link:focus & {
+  .project__link:hover &,
+  .project__link:focus & {
     transform: translateY(0);
   }
 }

@@ -5,16 +5,15 @@
 @import './base/common';
 @import './base/container';
 
-@import './components/active-link';
 @import './components/backdrop';
-@import './components/modal-btn';
+@import './components/hero-btn';
 @import './components/title';
 @import './components/social-list';
-@import './components/logo';
+@import './components/navigation-logo';
 @import './components/section';
 @import './components/header-nav';
 @import './components/header-contacts';
-@import './components/modal-window-footer';
+@import './components/modal-form-footer';
 @import './components/modal-btn-footer';
 @import './components/modal-form';
 @import './components/modal-btn-close';
@@ -27,6 +26,6 @@
 @import './layout/advantage';
 @import './layout/gallery';
 @import './layout/team';
-@import './layout/regular-customers';
+@import './layout/customers';
 @import './layout/portfolio';
-@import './layout/work-categories';
+@import './layout/projects';

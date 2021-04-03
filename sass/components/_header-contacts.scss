@@ -1,8 +1,10 @@
 .contacts {
-  @include flex();
-  margin-left: auto;
+  &__list {
+    @include flex();
+    margin-left: auto;
+  }
 
-  &__item--mail {
+  &__item:not(:last-child) {
     margin-right: 50px;
   }
 
@@ -25,16 +27,14 @@
       fill: var(--accent-color);
     }
   }
-}
-
-.envelope-img {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-
-.smartphone-img {
-  width: 12px;
-  height: 16px;
-  margin-right: 10px;
+  &__icon-mail {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+  &__icon-tel {
+    margin-right: 10px;
+    width: 12px;
+    height: 16px;
+  }
 }

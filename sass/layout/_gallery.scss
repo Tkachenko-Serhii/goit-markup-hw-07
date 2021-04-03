@@ -17,23 +17,23 @@
     position: relative;
   }
 
-  &__text {
+  &__box {
     position: absolute;
     bottom: 0px;
     width: 100%;
     padding-top: 27px;
     padding-bottom: 27px;
     background: rgba(47, 48, 58, 0.8);
+  }
 
-    &--style {
-      display: block;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 1.14;
-      text-align: center;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: var(--main-color);
-    }
+  &__description {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
   }
 }

@@ -1,4 +1,4 @@
-.logo {
+.navigation__logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -9,10 +9,10 @@
   padding-bottom: 25px;
   margin-right: 90px;
 
-  &--white-theme {
+  &-dark {
     color: var(--second-color);
   }
-  &--dark-theme {
+  &-white {
     color: var(--main-color);
   }
 }
